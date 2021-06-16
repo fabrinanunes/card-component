@@ -1,0 +1,139 @@
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --darkcyan: hsl(179, 100%, 13%);
+  --offwhite: hsl(0, 0%, 95%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--offwhite);
+  font-size: 15px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.flex-container div {
+  padding: 20px 50px;
+  width: 210px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#card1 {
+  background-color: var(--orange);
+  border-radius: 5px 0 0 5px;
+}
+
+#card2 {
+  background-color: var(--cyan);
+}
+
+#card3 {
+  background-color: var(--darkcyan);
+  border-radius: 0 5px 5px 0;
+}
+
+.flex-container .logo {
+  width: max-content;
+  margin: 14px 0;
+}
+
+.flex-container h1 {
+  color: var(--offwhite);
+  font-family: "Big Shoulders Display";
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca";
+  font-size: 0.9rem;
+}
+
+.flex-container div button {
+  width: 150px;
+  height: 50px;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  border: none;
+  border-radius: 30px;
+  margin: 80px 0 20px;
+  background-color: var(--offwhite);
+  cursor: pointer;
+  outline: none;
+}
+
+.flex-container div:nth-child(1) button {
+  color: var(--orange);
+}
+
+.flex-container div:nth-child(1) button:hover {
+  color: var(--offwhite);
+  border: 2px solid var(--offwhite);
+  background-color: transparent;
+  transition: 0.4s ease-in-out;
+}
+
+.flex-container div:nth-child(2) button {
+  color: var(--cyan);
+}
+
+.flex-container div:nth-child(2) button:hover {
+  color: var(--offwhite);
+  border: 2px solid var(--offwhite);
+  background-color: transparent;
+  transition: 0.4s ease-in-out;
+}
+
+.flex-container div:nth-child(3) button {
+  color: var(--darkcyan);
+}
+
+.flex-container div:nth-child(3) button:hover {
+  color: var(--offwhite);
+  border: 2px solid var(--offwhite);
+  background-color: transparent;
+  transition: 0.4s ease-in-out;
+}
+
+.attribution{
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+  margin-top: -50px;
+}
+
+@media only screen and (max-width: 1070px){
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: normal;
+        margin: 50px 0;
+        width: auto;
+        height: auto;
+    }
+    
+    .flex-container div {
+    width: 200px;
+    }
+
+    .flex-container div button{
+    margin-top: 10px;
+    }
+
+    #card1{
+        border-radius: 5px 5px 0 0;
+    }
+
+    #card3 {
+        border-radius: 0 0 5px 5px;
+    }
+}
